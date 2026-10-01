@@ -20,8 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Ariketa2ZoriontzekoTxartelaTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    ZorionakTestua(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -31,17 +30,14 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+fun ZorionakTestua(modifier: Modifier = Modifier) {
+
 }
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun ZorionakTestuaPreview() {
     Ariketa2ZoriontzekoTxartelaTheme {
-        Greeting("Android")
+        ZorionakTestua()
     }
 }
